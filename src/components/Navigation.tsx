@@ -2,6 +2,9 @@ import { Button } from "@/components/ui/button";
 import { NavLink } from "@/components/NavLink";
 
 const Navigation = () => {
+  const ACADEMY_URL = import.meta.env.VITE_ACADEMY_URL || 'http://localhost:8081/';
+  const CREATIVE_URL = import.meta.env.VITE_CREATIVE_URL || 'http://localhost:8082/';
+  
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-6 py-4">
@@ -20,10 +23,10 @@ const Navigation = () => {
             <NavLink to="/about" className="text-foreground hover:text-primary transition-colors font-medium" activeClassName="text-primary">
               About
             </NavLink>
-            <a href="/#academy" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href={ACADEMY_URL} className="text-foreground hover:text-primary transition-colors font-medium">
               Academy
             </a>
-            <a href="/#creative" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href={CREATIVE_URL} className="text-foreground hover:text-primary transition-colors font-medium">
               Creative
             </a>
             <a href="/#contact" className="text-foreground hover:text-primary transition-colors font-medium">

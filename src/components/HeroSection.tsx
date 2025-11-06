@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
 
 const HeroSection = () => {
+  const ACADEMY_URL = import.meta.env.VITE_ACADEMY_URL || 'http://localhost:8081/';
+  const CREATIVE_URL = import.meta.env.VITE_CREATIVE_URL || 'http://localhost:8082/';
+  
   return (
     <section id="home" className="min-h-screen flex items-center justify-center pt-20 px-6">
       <div className="container mx-auto">
@@ -19,10 +22,10 @@ const HeroSection = () => {
             </p>
 
             <div className="flex flex-wrap gap-4">
-              <Button size="lg">
+              <Button size="lg" onClick={() => window.location.href = ACADEMY_URL}>
                 Explore Academy
               </Button>
-              <Button size="lg" variant="secondary">
+              <Button size="lg" variant="secondary" onClick={() => window.location.href = CREATIVE_URL}>
                 Creative Services
               </Button>
             </div>
