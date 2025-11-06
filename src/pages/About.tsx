@@ -1,6 +1,10 @@
 import Navigation from "@/components/Navigation";
 import AboutHero from "@/components/AboutHero";
-import AboutSection from "@/components/AboutSection";
+import AboutStory from "@/components/AboutStory";
+import AboutDivisions from "@/components/AboutDivisions";
+import AboutValues from "@/components/AboutValues";
+import AboutJourney from "@/components/AboutJourney";
+import AboutContact from "@/components/AboutContact";
 import Footer from "@/components/Footer";
 
 const About = () => {
@@ -9,7 +13,11 @@ const About = () => {
       <Navigation />
       <AboutHero />
       <main>
-        <AboutSection />
+        <AboutStory />
+        <AboutDivisions />
+        <AboutValues />
+        <AboutJourney />
+        <AboutContact />
       </main>
       <Footer />
     </div>

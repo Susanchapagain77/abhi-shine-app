@@ -1,0 +1,68 @@
+const AboutStory = () => {
+  return (
+    <section className="py-20 lg:py-28">
+      <div className="container mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-16 items-center">
+          {/* Left: Story content */}
+          <div className="space-y-8 animate-fade-in">
+            <div className="space-y-4">
+              <h2 className="text-3xl lg:text-4xl font-bold">Our Story</h2>
+              <div className="w-20 h-1 bg-primary rounded-full" />
+            </div>
+            
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+              <p>
+                We exist to empower individuals with the skills they need to succeed and to enable businesses with the strategies and technologies that help them thrive.
+              </p>
+              <p>
+                In an increasingly competitive world, we recognized a critical gap between traditional education and the practical skills needed to succeed in modern careers and businesses.
+              </p>
+              <p>
+                This realization led to the creation of <span className="font-semibold text-foreground">ABHIDH Group</span> — a unique ecosystem where individuals can develop essential skills through our Academy while businesses can leverage cutting-edge digital solutions through our Creative division.
+              </p>
+              <p className="text-xl font-medium text-foreground">
+                Today, we stand as a bridge between learning and doing, theory and practice, potential and achievement.
+              </p>
+            </div>
+          </div>
+
+          {/* Right: Mission & Vision cards */}
+          <div className="space-y-6 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <div className="group relative p-8 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent rounded-3xl border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative">
+                <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/20 rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-3">Our Mission</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  To empower individuals and organizations through comprehensive education and innovative digital solutions.
+                </p>
+              </div>
+            </div>
+
+            <div className="group relative p-8 bg-gradient-to-br from-primary/10 via-primary/5 to-transparent rounded-3xl border border-border hover:border-primary/50 transition-all duration-500 hover:shadow-lg">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              <div className="relative">
+                <div className="inline-flex items-center justify-center w-14 h-14 bg-primary/20 rounded-2xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                  <svg className="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold mb-3">Our Vision</h3>
+                <p className="text-muted-foreground leading-relaxed">
+                  To be the leading catalyst for personal and business transformation through integrated learning and technology.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AboutStory;

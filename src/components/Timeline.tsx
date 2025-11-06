@@ -8,34 +8,60 @@ const milestones = [
 const Timeline = () => {
   return (
     <div className="w-full">
-      {/* Desktop: horizontal timeline with connecting line */}
-      <div className="hidden lg:block relative py-8">
-        <div className="absolute left-10 right-10 top-12 h-0.5 bg-border/40" />
+      {/* Desktop: horizontal timeline */}
+      <div className="hidden lg:block relative py-12">
+        {/* Connection line */}
+        <div className="absolute left-0 right-0 top-20 h-1 bg-gradient-to-r from-primary/20 via-primary/50 to-primary/20 rounded-full" />
 
-        <div className="relative flex items-start justify-between">
+        <div className="relative grid grid-cols-4 gap-8">
           {milestones.map((m, idx) => (
-            <div key={idx} className="flex-1 text-center px-4">
-              <div className="mx-auto w-20 h-20 bg-background rounded-full flex items-center justify-center text-lg font-bold border border-border shadow-sm">
-                {m.year}
+            <div 
+              key={idx} 
+              className="flex flex-col items-center animate-fade-in"
+              style={{ animationDelay: `${idx * 0.15}s` }}
+            >
+              {/* Year badge */}
+              <div className="group relative">
+                <div className="absolute inset-0 bg-primary/20 rounded-full blur-lg opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                <div className="relative w-24 h-24 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center text-xl font-bold text-white shadow-lg group-hover:scale-110 transition-transform duration-300 border-4 border-background">
+                  {m.year}
+                </div>
               </div>
-              <div className="mt-4">
-                <h5 className="font-semibold text-base">{m.title}</h5>
-                <p className="mt-2 text-sm text-muted-foreground">{m.desc}</p>
+              
+              {/* Content */}
+              <div className="mt-8 text-center">
+                <h5 className="font-bold text-lg mb-2">{m.title}</h5>
+                <p className="text-sm text-muted-foreground leading-relaxed">{m.desc}</p>
               </div>
             </div>
           ))}
         </div>
       </div>
 
-      {/* Mobile: stacked timeline cards */}
-      <div className="lg:hidden space-y-4">
+      {/* Mobile: vertical timeline */}
+      <div className="lg:hidden relative space-y-8">
+        {/* Vertical line */}
+        <div className="absolute left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-primary/20 via-primary/50 to-primary/20 rounded-full" />
+        
         {milestones.map((m, idx) => (
-          <div key={idx} className="p-4 bg-card rounded-xl border border-border shadow-sm">
-            <div className="flex items-center gap-4">
-              <div className="w-12 h-12 rounded-full bg-background flex items-center justify-center font-bold border border-border">{m.year}</div>
-              <div>
-                <div className="font-semibold">{m.title}</div>
-                <div className="text-sm text-muted-foreground">{m.desc}</div>
+          <div 
+            key={idx} 
+            className="relative flex gap-6 animate-fade-in"
+            style={{ animationDelay: `${idx * 0.15}s` }}
+          >
+            {/* Year badge */}
+            <div className="flex-shrink-0 relative">
+              <div className="w-12 h-12 bg-gradient-to-br from-primary to-primary/80 rounded-full flex items-center justify-center font-bold text-white shadow-lg border-4 border-background">
+                {m.year.slice(-2)}
+              </div>
+            </div>
+            
+            {/* Content card */}
+            <div className="flex-1 pb-4">
+              <div className="p-5 bg-card rounded-2xl border border-border hover:border-primary/50 transition-all duration-300 hover:shadow-lg">
+                <div className="text-xs font-semibold text-primary mb-2">{m.year}</div>
+                <h5 className="font-bold text-base mb-2">{m.title}</h5>
+                <p className="text-sm text-muted-foreground leading-relaxed">{m.desc}</p>
               </div>
             </div>
           </div>
