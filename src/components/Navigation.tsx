@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { NavLink } from "@/components/NavLink";
 
 const Navigation = () => {
   return (
@@ -13,19 +14,19 @@ const Navigation = () => {
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#home" className="text-foreground hover:text-primary transition-colors font-medium">
+            <NavLink to="/" className="text-foreground hover:text-primary transition-colors font-medium" activeClassName="text-primary">
               Home
-            </a>
-            <a href="#about" className="text-foreground hover:text-primary transition-colors font-medium">
+            </NavLink>
+            <NavLink to="/about" className="text-foreground hover:text-primary transition-colors font-medium" activeClassName="text-primary">
               About
-            </a>
-            <a href="#academy" className="text-foreground hover:text-primary transition-colors font-medium">
+            </NavLink>
+            <a href="/#academy" className="text-foreground hover:text-primary transition-colors font-medium">
               Academy
             </a>
-            <a href="#creative" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href="/#creative" className="text-foreground hover:text-primary transition-colors font-medium">
               Creative
             </a>
-            <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">
+            <a href="/#contact" className="text-foreground hover:text-primary transition-colors font-medium">
               Contact
             </a>
           </div>
