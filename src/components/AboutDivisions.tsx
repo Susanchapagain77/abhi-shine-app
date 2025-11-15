@@ -2,13 +2,16 @@ import { Button } from "@/components/ui/button";
 import { GraduationCap, Sparkles, CheckCircle } from "lucide-react";
 
 const AboutDivisions = () => {
+  const ACADEMY_URL = import.meta.env.VITE_ACADEMY_URL || "http://localhost:8081/";
+  const CREATIVE_URL = import.meta.env.VITE_CREATIVE_URL || "http://localhost:8082/";
+
   return (
     <section className="py-20 lg:py-28 bg-gradient-to-b from-background via-muted/30 to-background">
       <div className="container mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-16 animate-fade-in">
           <h2 className="text-3xl lg:text-4xl font-bold mb-4">Our Group Identity</h2>
           <p className="text-lg text-muted-foreground">
-            Our identity as a group company lies in the strength of our two arms
+            Our identity as a group company lies in the strength of our two arms — education and digital transformation.
           </p>
         </div>
 
@@ -32,7 +35,11 @@ const AboutDivisions = () => {
               </p>
 
               <div className="space-y-3 mb-8">
-                {["Skills Development", "Confidence Building", "Career Readiness"].map((item, idx) => (
+                {[
+                  "High-impact soft skills, leadership, and communication programs.",
+                  "Hands-on technical training in digital marketing, AI, IT, and analytics.",
+                  "Customized workshops for schools, colleges, and corporate teams."
+                ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3 group/item">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 group-hover/item:scale-110 transition-transform" />
                     <span className="text-foreground font-medium">{item}</span>
@@ -40,8 +47,8 @@ const AboutDivisions = () => {
                 ))}
               </div>
 
-              <Button size="lg" className="w-full sm:w-auto">
-                Explore Academy
+              <Button size="lg" className="w-full sm:w-auto" onClick={() => (window.location.href = ACADEMY_URL)}>
+                Explore Abhidh Academy
               </Button>
             </div>
           </div>
@@ -65,7 +72,11 @@ const AboutDivisions = () => {
               </p>
 
               <div className="space-y-3 mb-8">
-                {["Digital Expansion", "Brand Optimization", "Innovation Integration"].map((item, idx) => (
+                {[
+                  "Data-driven digital marketing campaigns and SEO strategies.",
+                  "Website, mobile app, and custom software development with long-term support.",
+                  "Branding, creative design, and multimedia storytelling for modern audiences."
+                ].map((item, idx) => (
                   <div key={idx} className="flex items-center gap-3 group/item">
                     <CheckCircle className="w-5 h-5 text-primary flex-shrink-0 group-hover/item:scale-110 transition-transform" />
                     <span className="text-foreground font-medium">{item}</span>
@@ -73,8 +84,13 @@ const AboutDivisions = () => {
                 ))}
               </div>
 
-              <Button size="lg" variant="outline" className="w-full sm:w-auto">
-                Visit Creative
+              <Button
+                size="lg"
+                variant="outline"
+                className="w-full sm:w-auto"
+                onClick={() => (window.location.href = CREATIVE_URL)}
+              >
+                Explore Abhidh Creative
               </Button>
             </div>
           </div>

@@ -12,16 +12,19 @@ const AboutStory = () => {
             
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                We exist to empower individuals with the skills they need to succeed and to enable businesses with the strategies and technologies that help them thrive.
+                At <span className="font-semibold text-foreground">Abhidh Group</span>, we believe that growth is not just about achieving numbers — it is about creating value that lasts. We exist to empower individuals with the skills they need to succeed and to enable businesses with the strategies and technologies that help them thrive.
               </p>
               <p>
-                In an increasingly competitive world, we recognized a critical gap between traditional education and the practical skills needed to succeed in modern careers and businesses.
+                Our identity as a group company lies in the strength of our two arms: <strong className="text-foreground">Abhidh Academy</strong>, a professional training institute that nurtures skills, confidence, and career readiness among students, professionals, and organizations; and <strong className="text-foreground">Abhidh Creative</strong>, a digital and IT solutions partner that helps businesses expand their reach, optimize their brand presence, and embrace innovation.
               </p>
               <p>
-                This realization led to the creation of <span className="font-semibold text-foreground">ABHIDH Group</span> — a unique ecosystem where individuals can develop essential skills through our Academy while businesses can leverage cutting-edge digital solutions through our Creative division.
+                Together, we combine the power of <em>education and technology</em> to drive meaningful transformation in society.
+              </p>
+              <p>
+                Abhidh Group was founded with a simple yet powerful idea — to <strong className="text-foreground">bridge the gap between potential and opportunity</strong>. We recognized that while many individuals in Nepal and beyond had talent, they lacked the professional training to excel. At the same time, many businesses struggled to adapt to the fast-paced digital economy.
               </p>
               <p className="text-xl font-medium text-foreground">
-                Today, we stand as a bridge between learning and doing, theory and practice, potential and achievement.
+                Today, our journey is about creating synergy between the two — building people and businesses together for a stronger tomorrow.
               </p>
             </div>
           </div>
@@ -38,7 +41,7 @@ const AboutStory = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-3">Our Mission</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To empower individuals and organizations through comprehensive education and innovative digital solutions.
+                  To empower people through skill development and enable businesses with digital and IT solutions that fuel long-term growth.
                 </p>
               </div>
             </div>
@@ -54,7 +57,7 @@ const AboutStory = () => {
                 </div>
                 <h3 className="text-2xl font-bold mb-3">Our Vision</h3>
                 <p className="text-muted-foreground leading-relaxed">
-                  To be the leading catalyst for personal and business transformation through integrated learning and technology.
+                  To become a globally recognized hub for professional learning and digital transformation, shaping a future where individuals are confident, businesses are competitive, and communities are progressive.
                 </p>
               </div>
             </div>

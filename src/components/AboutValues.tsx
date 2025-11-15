@@ -1,29 +1,29 @@
-import { Users, Star, Zap, Target } from "lucide-react";
+import { ShieldCheck, Star, Zap, Target } from "lucide-react";
 
 const AboutValues = () => {
   const values = [
     {
-      icon: Users,
-      title: "People First",
-      description: "Every decision we make prioritizes the growth and success of the people we serve.",
-      gradient: "from-blue-500/20 to-blue-500/5"
-    },
-    {
       icon: Star,
       title: "Excellence",
-      description: "We maintain the highest standards in both our educational programs and business solutions.",
+      description: "We aim for the highest standards in everything we deliver — from training sessions to marketing strategies.",
       gradient: "from-primary/20 to-primary/5"
     },
     {
       icon: Zap,
       title: "Innovation",
-      description: "We continuously evolve our methods to stay ahead of industry trends and needs.",
+      description: "We embrace creativity and technology to craft smarter, more effective solutions.",
+      gradient: "from-purple-500/20 to-purple-500/5"
+    },
+    {
+      icon: ShieldCheck,
+      title: "Integrity",
+      description: "We believe in transparency, honesty, and accountability in all our partnerships.",
       gradient: "from-purple-500/20 to-purple-500/5"
     },
     {
       icon: Target,
       title: "Impact",
-      description: "We measure our success by the positive transformation we create in lives and businesses.",
+      description: "Every initiative we take is designed to create meaningful outcomes for individuals and organizations.",
       gradient: "from-green-500/20 to-green-500/5"
     }
   ];
