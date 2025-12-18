@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Linkedin } from "lucide-react";
+import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Linkedin, Youtube, Music } from "lucide-react";
 
 const AboutContact = () => {
   const contactInfo = [
@@ -8,10 +8,11 @@ const AboutContact = () => {
   ];
 
   const socialLinks = [
-    { icon: Facebook, href: "#", label: "Facebook" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" }
+    { icon: Facebook, href: "https://www.facebook.com/abhidhgroup/", label: "Facebook" },
+    { icon: Instagram, href: "https://www.instagram.com/abhidhgroup/", label: "Instagram" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/abhidhacademy", label: "LinkedIn" },
+    { icon: Youtube, href: "https://www.youtube.com/@AbhidhGroup", label: "YouTube" },
+    { icon: Music, href: "https://www.tiktok.com/@abhidh.group", label: "TikTok" },
   ];
 
   return (

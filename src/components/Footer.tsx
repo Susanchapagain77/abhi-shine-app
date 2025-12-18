@@ -1,20 +1,30 @@
+import { Facebook, Instagram, Linkedin, Youtube, Music } from "lucide-react";
+
 const Footer = () => {
+  // Social media links
+  const FACEBOOK_URL = "https://www.facebook.com/abhidhgroup/";
+  const INSTAGRAM_URL = "https://www.instagram.com/abhidhgroup/";
+  const LINKEDIN_URL = "https://www.linkedin.com/company/abhidhacademy";
+  const YOUTUBE_URL = "https://www.youtube.com/@AbhidhGroup";
+  const TIKTOK_URL = "https://www.tiktok.com/@abhidh.group";
+
   return (
     <footer className="relative py-12 px-6 border-t border-white/10 bg-card/60 backdrop-blur-xl">
       <div className="absolute inset-x-0 top-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
       <div className="container mx-auto relative">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div className="space-y-4">
-            <div className="text-2xl font-bold">
-              <span className="text-foreground">ABHIDH</span>
-              <span className="text-primary"> GROUP</span>
-            </div>
-            <p className="text-muted-foreground text-sm">
-              Empowering people and businesses through skills and digital solutions.
-            </p>
+        {/* Logo and Tagline - Center Aligned */}
+        <div className="text-center mb-12">
+          <div className="text-2xl font-bold mb-3">
+            <span className="text-foreground">ABHIDH</span>
+            <span className="text-primary"> GROUP</span>
           </div>
+          <p className="text-muted-foreground text-sm">
+            Empowering people and businesses through skills and digital solutions.
+          </p>
+        </div>
 
-          <div>
+        <div className="grid md:grid-cols-2 gap-8 mb-8">
+          <div className="text-center">
             <h4 className="font-bold mb-4">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
@@ -45,10 +55,9 @@ const Footer = () => {
             </ul>
           </div>
 
-          <div>
-            <h4 className="font-bold mb-4">Services</h4>
+          {/* <div>
+            <h4 className="font-bold mb-4">Digital Services</h4>
             <ul className="space-y-2 text-sm">
-              <li className="text-muted-foreground">Training & Development</li>
               <li className="text-muted-foreground">Digital Marketing</li>
               <li className="text-muted-foreground">Web Development</li>
               <li className="text-muted-foreground">Mobile Apps</li>
@@ -56,12 +65,72 @@ const Footer = () => {
           </div>
 
           <div>
+            <h4 className="font-bold mb-4">Training</h4>
+            <ul className="space-y-2 text-sm">
+              <li className="text-muted-foreground">School Trainings</li>
+              <li className="text-muted-foreground">College Trainings</li>
+              <li className="text-muted-foreground">Corporate Trainings</li>
+              <li className="text-muted-foreground">Technical & career Trainings</li>
+            </ul>
+          </div> */}
+
+          <div className="text-center">
             <h4 className="font-bold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li>Email: info@abhidhgroup.com</li>
               <li>Phone: +977-9841080407 / +977-9801110981</li>
               <li>Location: Nardevi, Kathmandu, Nepal</li>
             </ul>
+            <div className="mt-4">
+              <h4 className="font-bold mb-4">Follow Us</h4>
+              <div className="flex items-center gap-4">
+                <a
+                  href={FACEBOOK_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-[#1877F2] transition-colors"
+                  aria-label="Facebook"
+                >
+                  <Facebook className="h-5 w-5" />
+                </a>
+                <a
+                  href={INSTAGRAM_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-[#E4405F] transition-colors"
+                  aria-label="Instagram"
+                >
+                  <Instagram className="h-5 w-5" />
+                </a>
+                <a
+                  href={LINKEDIN_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-[#0A66C2] transition-colors"
+                  aria-label="LinkedIn"
+                >
+                  <Linkedin className="h-5 w-5" />
+                </a>
+                <a
+                  href={YOUTUBE_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-[#FF0000] transition-colors"
+                  aria-label="YouTube"
+                >
+                  <Youtube className="h-5 w-5" />
+                </a>
+                <a
+                  href={TIKTOK_URL}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-muted-foreground hover:text-[#000000] transition-colors"
+                  aria-label="TikTok"
+                >
+                  <Music className="h-5 w-5" />
+                </a>
+              </div>
+            </div>
           </div>
         </div>
 

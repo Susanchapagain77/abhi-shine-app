@@ -4,7 +4,6 @@ const AboutHero = () => {
   const stats = [
     { icon: Users, value: "500+", label: "Success Stories" },
     { icon: TrendingUp, value: "4+", label: "Years Experience" },
-    { icon: Target, value: "2", label: "Divisions" },
     { icon: Sparkles, value: "100%", label: "Commitment" }
   ];
 
@@ -56,7 +55,7 @@ const AboutHero = () => {
           </div>
 
           {/* Stats grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6 mt-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 lg:gap-6 mt-16 animate-fade-in" style={{ animationDelay: '0.3s' }}>
             {stats.map((stat, index) => (
               <div
                 key={index}

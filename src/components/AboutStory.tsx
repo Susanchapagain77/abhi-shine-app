@@ -10,7 +10,7 @@ const AboutStory = () => {
               <div className="w-20 h-1 bg-primary rounded-full" />
             </div>
             
-            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed text-justify">
               <p>
                 At <span className="font-semibold text-foreground">Abhidh Group</span>, we believe that growth is not just about achieving numbers — it is about creating value that lasts. We exist to empower individuals with the skills they need to succeed and to enable businesses with the strategies and technologies that help them thrive.
               </p>

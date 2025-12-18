@@ -5,6 +5,7 @@ import WhyChooseSection from "@/components/WhyChooseSection";
 import PartnersSection from "@/components/PartnersSection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => {
   return (
@@ -16,6 +17,7 @@ const Index = () => {
       <PartnersSection />
       <CTASection />
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };

@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 
 const CTASection = () => {
+  const navigate = useNavigate();
+
   return (
     <section id="contact" className="relative py-28 px-6 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-background via-secondary/20 to-background" />
@@ -17,27 +20,13 @@ const CTASection = () => {
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 pt-4">
-            <Button size="lg" className="rounded-full px-8 shadow-[0_18px_40px_-20px_rgba(20,40,90,0.6)] hover:-translate-y-0.5 transition-transform">
+            <Button 
+              size="lg" 
+              className="rounded-full px-8 shadow-[0_18px_40px_-20px_rgba(20,40,90,0.6)] hover:-translate-y-0.5 transition-transform"
+              onClick={() => navigate("/contact")}
+            >
               Contact Us
             </Button>
-            <Button size="lg" variant="secondary" className="rounded-full border-white/20 bg-white/10 text-primary hover:bg-white/20 backdrop-blur">
-              Schedule a Call
-            </Button>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 mt-16 pt-16 border-t border-white/10">
-            <div className="rounded-2xl border border-white/10 bg-card/40 p-6 backdrop-blur-md shadow-inner shadow-primary/10">
-              <div className="text-4xl font-bold text-primary mb-2">500+</div>
-              <p className="text-muted-foreground/85 font-medium">Students Trained</p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-card/40 p-6 backdrop-blur-md shadow-inner shadow-primary/10">
-              <div className="text-4xl font-bold text-primary mb-2">100+</div>
-              <p className="text-muted-foreground/85 font-medium">Projects Delivered</p>
-            </div>
-            <div className="rounded-2xl border border-white/10 bg-card/40 p-6 backdrop-blur-md shadow-inner shadow-primary/10">
-              <div className="text-4xl font-bold text-primary mb-2">95%</div>
-              <p className="text-muted-foreground/85 font-medium">Client Satisfaction</p>
-            </div>
           </div>
         </div>
       </div>

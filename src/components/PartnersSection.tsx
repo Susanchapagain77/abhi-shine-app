@@ -9,10 +9,9 @@ const PartnersSection = () => {
   ];
 
   const stats = [
-    { value: "60+", label: "Active Partners" },
-    { value: "30+", label: "Educational Institutions" },
-    { value: "40+", label: "Corporate Partners" },
-    { value: "7+", label: "Years Experience" },
+    { value: "15+", label: "Educational Institutions" },
+    { value: "10+", label: "Corporate Partners" },
+    { value: "4+", label: "Years Experience" },
   ];
 
   return (
@@ -47,7 +46,7 @@ const PartnersSection = () => {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-4 gap-8">
+        <div className="grid md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <div key={index} className="rounded-2xl border border-white/10 bg-card/40 p-6 text-center backdrop-blur-md shadow-inner shadow-primary/10">
               <div className="text-4xl font-bold text-primary mb-2">{stat.value}</div>

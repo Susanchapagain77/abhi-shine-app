@@ -55,14 +55,18 @@ const WhyChooseSection = () => {
           ))}
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 mt-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-16">
           <div className="rounded-2xl border border-white/10 bg-card/40 p-8 text-center backdrop-blur-lg shadow-inner shadow-primary/10">
             <div className="text-5xl font-bold text-primary mb-2">500+</div>
             <p className="text-muted-foreground/85 font-medium">Students Trained</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-card/40 p-8 text-center backdrop-blur-lg shadow-inner shadow-primary/10">
             <div className="text-5xl font-bold text-primary mb-2">100+</div>
-            <p className="text-muted-foreground/85 font-medium">Projects Delivered</p>
+            <p className="text-muted-foreground/85 font-medium">Trainings Available</p>
+          </div>
+          <div className="rounded-2xl border border-white/10 bg-card/40 p-8 text-center backdrop-blur-lg shadow-inner shadow-primary/10">
+            <div className="text-5xl font-bold text-primary mb-2">25+</div>
+            <p className="text-muted-foreground/85 font-medium">Digital Services Available</p>
           </div>
           <div className="rounded-2xl border border-white/10 bg-card/40 p-8 text-center backdrop-blur-lg shadow-inner shadow-primary/10">
             <div className="text-5xl font-bold text-primary mb-2">95%</div>

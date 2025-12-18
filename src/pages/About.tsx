@@ -6,6 +6,7 @@ import AboutValues from "@/components/AboutValues";
 import AboutJourney from "@/components/AboutJourney";
 import AboutContact from "@/components/AboutContact";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const About = () => {
   return (
@@ -20,6 +21,7 @@ const About = () => {
         <AboutContact />
       </main>
       <Footer />
+      <WhatsAppButton />
     </div>
   );
 };
