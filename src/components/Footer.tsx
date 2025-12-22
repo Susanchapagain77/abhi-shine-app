@@ -24,8 +24,8 @@ const Footer = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8 mb-8">
-          <div className="text-center">
-            <h4 className="font-bold mb-4">Quick Links</h4>
+          <div className="text-center md:text-left">
+            <h4 className="font-bold mb-4 text-foreground">Quick Links</h4>
             <ul className="space-y-2 text-sm">
               <li>
                 <a href="/" className="text-muted-foreground hover:text-primary transition-colors">
@@ -55,40 +55,32 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* <div>
-            <h4 className="font-bold mb-4">Digital Services</h4>
-            <ul className="space-y-2 text-sm">
-              <li className="text-muted-foreground">Digital Marketing</li>
-              <li className="text-muted-foreground">Web Development</li>
-              <li className="text-muted-foreground">Mobile Apps</li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-bold mb-4">Training</h4>
-            <ul className="space-y-2 text-sm">
-              <li className="text-muted-foreground">School Trainings</li>
-              <li className="text-muted-foreground">College Trainings</li>
-              <li className="text-muted-foreground">Corporate Trainings</li>
-              <li className="text-muted-foreground">Technical & career Trainings</li>
-            </ul>
-          </div> */}
-
-          <div className="text-center">
-            <h4 className="font-bold mb-4">Contact</h4>
-            <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>Email: info@abhidhgroup.com</li>
-              <li>Phone: +977-9841080407 / +977-9801110981</li>
-              <li>Location: Nardevi, Kathmandu, Nepal</li>
-            </ul>
-            <div className="mt-4">
-              <h4 className="font-bold mb-4">Follow Us</h4>
-              <div className="flex items-center gap-4">
+          <div className="text-center md:text-left">
+            <h4 className="font-bold mb-4 text-foreground">Contact</h4>
+            <div className="space-y-2.5 text-sm text-muted-foreground">
+              <div className="flex items-start justify-center md:justify-start gap-3">
+                <span className="font-medium text-foreground min-w-[70px]">Email:</span>
+                <a href="mailto:info@abhidhgroup.com" className="hover:text-primary transition-colors break-words">
+                  info@abhidhgroup.com
+                </a>
+              </div>
+              <div className="flex items-start justify-center md:justify-start gap-3">
+                <span className="font-medium text-foreground min-w-[70px]">Phone:</span>
+                <span>+977-9841080407 / +977-9801110981</span>
+              </div>
+              <div className="flex items-start justify-center md:justify-start gap-3">
+                <span className="font-medium text-foreground min-w-[70px]">Location:</span>
+                <span>Nardevi, Kathmandu, Nepal</span>
+              </div>
+            </div>
+            <div className="mt-6">
+              <h4 className="font-bold mb-4 text-foreground">Follow Us</h4>
+              <div className="flex items-center justify-center md:justify-start gap-4">
                 <a
                   href={FACEBOOK_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-[#1877F2] transition-colors"
+                  className="text-muted-foreground hover:text-[#1877F2] transition-colors p-2 hover:bg-[#1877F2]/10 rounded-full"
                   aria-label="Facebook"
                 >
                   <Facebook className="h-5 w-5" />
@@ -97,7 +89,7 @@ const Footer = () => {
                   href={INSTAGRAM_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-[#E4405F] transition-colors"
+                  className="text-muted-foreground hover:text-[#E4405F] transition-colors p-2 hover:bg-[#E4405F]/10 rounded-full"
                   aria-label="Instagram"
                 >
                   <Instagram className="h-5 w-5" />
@@ -106,7 +98,7 @@ const Footer = () => {
                   href={LINKEDIN_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-[#0A66C2] transition-colors"
+                  className="text-muted-foreground hover:text-[#0A66C2] transition-colors p-2 hover:bg-[#0A66C2]/10 rounded-full"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="h-5 w-5" />
@@ -115,7 +107,7 @@ const Footer = () => {
                   href={YOUTUBE_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-[#FF0000] transition-colors"
+                  className="text-muted-foreground hover:text-[#FF0000] transition-colors p-2 hover:bg-[#FF0000]/10 rounded-full"
                   aria-label="YouTube"
                 >
                   <Youtube className="h-5 w-5" />
@@ -124,7 +116,7 @@ const Footer = () => {
                   href={TIKTOK_URL}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-muted-foreground hover:text-[#000000] transition-colors"
+                  className="text-muted-foreground hover:text-[#000000] transition-colors p-2 hover:bg-[#000000]/10 rounded-full"
                   aria-label="TikTok"
                 >
                   <Music className="h-5 w-5" />
