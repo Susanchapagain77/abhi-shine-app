@@ -66,7 +66,7 @@ const Footer = () => {
               <br />
               info@abhidhgroup.com
               <br />
-              +977-9841080407 / +977-9801110981
+              +977-9801110981
             </p>
           </div>
         </div>

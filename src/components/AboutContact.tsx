@@ -3,7 +3,7 @@ import { MapPin, Phone, Mail, Facebook, Instagram, Twitter, Linkedin, Youtube, M
 const AboutContact = () => {
   const contactInfo = [
     { icon: MapPin, text: "Nardevi, Kathmandu, Nepal" },
-    { icon: Phone, text: "+977-9841080407 / +977-9801110981" },
+    { icon: Phone, text: "+977-9801110981" },
     { icon: Mail, text: "info@abidhgroup.com" }
   ];
 

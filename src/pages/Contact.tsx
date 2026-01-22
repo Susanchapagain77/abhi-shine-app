@@ -18,7 +18,7 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    details: ["+977-9841080407", "+977-9801110981"],
+    details: ["+977-9801110981"],
   },
   {
     icon: MapPin,
