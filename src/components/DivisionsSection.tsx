@@ -1,8 +1,10 @@
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import academyHero from "@/assets/academy-hero.jpg";
 import creativeHero from "@/assets/creative-hero.jpg";
 
 const DivisionsSection = () => {
+  const navigate = useNavigate();
   const ACADEMY_URL = import.meta.env.VITE_ACADEMY_URL || "http://localhost:8081/";
   const CREATIVE_URL = import.meta.env.VITE_CREATIVE_URL || "http://localhost:8082/";
 
@@ -32,7 +34,7 @@ const DivisionsSection = () => {
             size="lg"
             variant="secondary"
             className="rounded-full border-white/20 bg-white/10 text-primary hover:bg-white/20 backdrop-blur"
-            onClick={() => (window.location.href = "/about")}
+            onClick={() => navigate("/about")}
           >
             Learn More About Us
           </Button>

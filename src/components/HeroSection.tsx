@@ -1,7 +1,9 @@
 import { Button } from "@/components/ui/button";
 import { Sparkles } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const ACADEMY_URL = import.meta.env.VITE_ACADEMY_URL || "http://localhost:8081/";
   const CREATIVE_URL = import.meta.env.VITE_CREATIVE_URL || "http://localhost:8082/";
 

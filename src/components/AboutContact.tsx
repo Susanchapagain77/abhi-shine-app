@@ -10,7 +10,7 @@ const AboutContact = () => {
   const socialLinks = [
     { icon: Facebook, href: "https://www.facebook.com/abhidhgroup/", label: "Facebook" },
     { icon: Instagram, href: "https://www.instagram.com/abhidhgroup/", label: "Instagram" },
-    { icon: Linkedin, href: "https://www.linkedin.com/company/abhidhacademy", label: "LinkedIn" },
+    { icon: Linkedin, href: "https://www.linkedin.com/company/abhidhgroup/", label: "LinkedIn" },
     { icon: Youtube, href: "https://www.youtube.com/@AbhidhGroup", label: "YouTube" },
     { icon: Music, href: "https://www.tiktok.com/@abhidh.group", label: "TikTok" },
   ];

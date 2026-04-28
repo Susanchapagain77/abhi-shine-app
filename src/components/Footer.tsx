@@ -4,15 +4,15 @@ import { Facebook, Instagram, Linkedin, Youtube, Music } from "lucide-react";
 const links = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
-  { label: "Academy", href: "/academy" },
-  { label: "Creative", href: "/creative" },
+  { label: "Academy", href: "https://academy.abhidh.com/" },
+  { label: "Creative", href: "https://creative.abhidh.com/" },
   { label: "Contact", href: "/contact" },
 ];
 
 const socials = [
   { icon: Facebook, href: "https://www.facebook.com/abhidhgroup/", label: "Facebook" },
   { icon: Instagram, href: "https://www.instagram.com/abhidhgroup/", label: "Instagram" },
-  { icon: Linkedin, href: "https://www.linkedin.com/company/abhidhacademy", label: "LinkedIn" },
+  { icon: Linkedin, href: "https://www.linkedin.com/company/abhidhgroup/", label: "LinkedIn" },
   { icon: Youtube, href: "https://www.youtube.com/@AbhidhGroup", label: "YouTube" },
   { icon: Music, href: "https://www.tiktok.com/@abhidh.group", label: "TikTok" },
 ];
@@ -51,9 +51,15 @@ const Footer = () => {
             <ul className="mt-4 space-y-2 text-sm text-foreground/80">
               {links.map((link) => (
                 <li key={link.href}>
-                  <Link to={link.href} className="transition hover:text-accent">
-                    {link.label}
-                  </Link>
+                  {link.href.startsWith("http") ? (
+                    <a href={link.href} className="transition hover:text-accent" target="_blank" rel="noopener noreferrer">
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link to={link.href} className="transition hover:text-accent">
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>
