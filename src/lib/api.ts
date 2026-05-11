@@ -5,7 +5,30 @@ const normalizedBase = (() => {
   return raw.replace(/\/+$/, "");
 })();
 
+const apiOrigin = normalizedBase.replace(/\/api$/, "");
+
 export const API_BASE_URL = normalizedBase;
+
+export interface PaginatedResponse<T> {
+  success: boolean;
+  data: T[];
+  pagination: {
+    current_page: number;
+    last_page: number;
+    per_page: number;
+    total: number;
+    from: number | null;
+    to: number | null;
+  };
+}
+
+export const buildAssetUrl = (assetPath?: string | null): string => {
+  if (!assetPath) return "";
+  if (/^https?:\/\//i.test(assetPath)) return assetPath;
+  const cleanedPath = assetPath.replace(/^\/+/, "");
+  const withStoragePrefix = cleanedPath.startsWith("storage/") ? cleanedPath : `storage/${cleanedPath}`;
+  return `${apiOrigin}/${withStoragePrefix}`;
+};
 
 const buildEndpointUrl = (path: string) => {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;

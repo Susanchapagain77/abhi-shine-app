@@ -15,6 +15,7 @@ const Navigation = () => {
   const navLinks = [
     { to: "/", label: "Home", isExternal: false },
     { to: "/about", label: "Who We Are", isExternal: false },
+    { to: "/gallery", label: "Gallery", isExternal: false },
     { to: ACADEMY_URL, label: "Academy", isExternal: true },
     { to: CREATIVE_URL, label: "Creative", isExternal: true },
     { to: "/contact", label: "Contact", isExternal: false },

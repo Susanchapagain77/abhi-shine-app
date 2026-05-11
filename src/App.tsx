@@ -8,6 +8,9 @@ import About from "./pages/About";
 import Academy from "./pages/Academy";
 import Creative from "./pages/Creative";
 import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
+import Gallery from "./pages/Gallery";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +27,9 @@ const App = () => (
           <Route path="/academy" element={<Navigate to={import.meta.env.VITE_ACADEMY_URL} replace />} />
           <Route path="/creative" element={<Navigate to={import.meta.env.VITE_CREATIVE_URL} replace />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/gallery" element={<Gallery />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

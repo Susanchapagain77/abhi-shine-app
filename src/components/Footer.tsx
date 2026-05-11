@@ -4,6 +4,7 @@ import { Facebook, Instagram, Linkedin, Youtube, Music } from "lucide-react";
 const links = [
   { label: "Home", href: "/" },
   { label: "About Us", href: "/about" },
+  { label: "Gallery", href: "/gallery" },
   { label: "Academy", href: "https://academy.abhidh.com/" },
   { label: "Creative", href: "https://creative.abhidh.com/" },
   { label: "Contact", href: "/contact" },
