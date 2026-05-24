@@ -68,10 +68,8 @@ const PartnersSection = () => {
             <div className="h-10 w-10 animate-spin rounded-full border-4 border-primary border-t-transparent" />
           </div>
         ) : (
-          <div className="relative mb-24 w-full overflow-hidden">
-            {/* The infinite slider track */}
-            <div className="flex w-fit animate-marquee gap-8 py-8 px-4">
-              {/* Double the partners to ensure seamless loop */}
+          <div className="relative mb-24 w-full overflow-hidden group">
+            <div className="flex w-fit animate-marquee gap-8 py-8 px-4 group-hover:[animation-play-state:paused]">
               {[...partners, ...partners].map((partner, index) => (
                 <div
                   key={`${partner.id}-${index}`}
@@ -79,7 +77,7 @@ const PartnersSection = () => {
                 >
                   {partner.link ? (
                     <a href={partner.link} target="_blank" rel="noopener noreferrer" className="block w-full">
-                      <div className="h-20 w-full flex items-center justify-center transition-all duration-300">
+                      <div className="h-20 w-full flex items-center justify-center">
                         <img
                           src={getFullImageUrl(partner.logo_url)}
                           alt={partner.name}
@@ -92,7 +90,7 @@ const PartnersSection = () => {
                     </a>
                   ) : (
                     <div className="w-full">
-                      <div className="h-20 w-full flex items-center justify-center transition-all duration-300">
+                      <div className="h-20 w-full flex items-center justify-center">
                         <img
                           src={getFullImageUrl(partner.logo_url)}
                           alt={partner.name}
@@ -106,7 +104,7 @@ const PartnersSection = () => {
                   )}
                 </div>
               ))}
-              
+
               {partners.length === 0 && (
                 <div className="w-full py-20 text-center text-muted-foreground">
                   No clients to display yet.
@@ -114,7 +112,6 @@ const PartnersSection = () => {
               )}
             </div>
 
-            {/* Fade effect on edges */}
             <div className="pointer-events-none absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-background to-transparent" />
             <div className="pointer-events-none absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-background to-transparent" />
           </div>
