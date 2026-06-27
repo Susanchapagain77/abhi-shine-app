@@ -71,7 +71,7 @@ const Footer = () => {
             <p className="mt-4 text-sm text-foreground/80">
               Nardevi, Kathmandu, Nepal
               <br />
-              info@abhidhgroup.com
+              info@abhidh.com
               <br />
               +977-9801110981 / +977-9841080407
             </p>
